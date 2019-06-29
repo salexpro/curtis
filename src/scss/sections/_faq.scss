@@ -1,0 +1,38 @@
+.faq{
+    background-image: url(../assets/img/bg_faq.jpg);
+    &_inner{
+        padding-top: 70px;
+    }
+    &_header{
+        text-align: center;
+    }
+    &_content{
+        padding-bottom: 30px;
+    }
+    &_rules{
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.7;
+        line-height: 1.33;
+    }
+    &_left{
+        position: absolute;
+        left: 36px;
+        bottom: 30px;
+        display: flex;
+        align-items: center;
+        &_policy{
+            margin-left: 22px;
+            font-weight: 400;
+            font-size: 15px;
+            color: $primary-color;
+        }
+    }
+    &_social{
+        a{
+            &:hover, &:focus{
+                opacity: 0.8;
+            }
+        }
+    }
+}

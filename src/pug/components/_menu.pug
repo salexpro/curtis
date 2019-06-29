@@ -1,13 +1,37 @@
-mixin menu(mod)
+mixin menu()
     -
         const menu = [
             {
-                title: 'title',
+                title: 'О Curtis',
                 link: '#link'
-            }
+            },
+            {
+                title: 'Главная',
+                link: '#main'
+            },
+            {
+                title: 'Правила',
+                link: '#link'
+            },
+            {
+                title: 'logo',
+                link: '#link'
+            },
+            {
+                title: 'Победители',
+                link: '#link'
+            },
+            {
+                title: 'Обратная связь',
+                link: '#link'
+            },
         ]
-    ul.menu(class=mod)
+    ul.menu&attributes(attributes)
         each item in menu
             li
-                a(href=item.link)
-                    =item.title
+                if item.title == 'logo'
+                    a(href=item.link class="header_logo")
+                        img(src="./assets/img/logo.png", alt="Curtis")
+                else
+                    a(href=item.link)
+                        =item.title

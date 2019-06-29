@@ -1,0 +1,31 @@
+.prizes{
+    text-align: center;
+    background-image: url(../assets/img/bg_prizes.jpg);
+    &_inner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 68px;
+        margin-bottom: 78px;
+    }
+    &_items{
+        margin-top: 99px;
+        margin-bottom: 83px;
+    }
+    &_item{
+        &_header{
+            color: $white;
+            font-weight: 700;
+        }
+        &_img{
+            margin-top: 63px;
+            margin-bottom: 73px;
+        }
+        &_title{
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+    }
+}

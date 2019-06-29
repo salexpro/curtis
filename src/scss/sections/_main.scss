@@ -1,0 +1,25 @@
+.main{
+    position: relative;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    &_inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &_bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    &_terms{
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 1;
+        margin-top: 30px;
+    }
+}

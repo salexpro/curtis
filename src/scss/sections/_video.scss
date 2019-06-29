@@ -1,0 +1,12 @@
+.video{
+    text-align: center;
+    background-image: url(../assets/img/bg_video.jpg);
+    background-position: center top;
+    &_inner{
+        height: 100%;
+        padding: 68px 0;
+    }
+    &_container{
+        margin-top: 95px;
+    }
+}

@@ -7,12 +7,12 @@
 		"uuidString": "5C187A25-3F55-476F-B331-8ED5900B5F60"
 		},
 	{
-		"name": "Demo mode with Github Pages",
+		"name": "New \"Run Script\" Step",
 		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\\n\" >> docs/js/app.min.js\ncat docs/js/components/fastnav.min.js >> docs/js/app.min.js\nrm -f build.zip\nzip -r build.zip build/",
 		"scriptType": 1,
-		"scriptUUIDString": "26AE3F7B-AC2D-4F34-BF67-57F311D0110B",
+		"scriptUUIDString": "9ECC054C-B1EB-48B2-B372-0596FD2F180F",
 		"stepType": 2,
-		"uuidString": "F1EFA6C6-105C-418D-BECE-C2E49FE54D13"
+		"uuidString": "89213D44-55DE-4A5B-926C-98D929732609"
 		}
 	],
 "creatorBuild": "29156",
@@ -21,46 +21,38 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/build/.babelrc",
-		"oF": 0
+		"oF": 1
 		},
 	"/.browserslistrc": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/build/.browserslistrc",
-		"oF": 0
+		"oF": 1
 		},
 	"/.eslintrc": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/build/.eslintrc",
-		"oF": 0
+		"oF": 1
 		},
 	"/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/build/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"/build": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/build/build",
-		"oF": 0
-		},
-	"/build.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/build.zip",
 		"oF": 0
 		},
 	"/docs": {
@@ -73,15 +65,26 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/build/node_modules",
-		"oF": 1
+		"oF": 0
+		},
+	"/node_modules/fullpage.js/dist/fullpage.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/fullpage.js/dist/fullpage.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
 		},
 	"/node_modules/jquery/dist/jquery.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
-		"oA": 2,
-		"oAP": "/build/node_modules/jquery/dist/jquery.js",
+		"oA": 1,
+		"oAP": "/build/node_modules/jquery/dist/jquery.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -99,17 +102,17 @@
 		},
 	"/package-lock.json": {
 		"ft": 524288,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/build/package-lock.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 0
 		},
 	"/package.json": {
 		"ft": 524288,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/build/package.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 0
 		},
@@ -122,9 +125,9 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/build/README.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -140,21 +143,137 @@
 		"oAP": "/build/assets/favicon/.gitkeep",
 		"oF": 0
 		},
-	"/src/assets/fonts/.gitkeep": {
+	"/src/assets/fonts/Akrobat/Akrobat.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/fonts/.gitkeep",
+		"oAP": "/build/assets/fonts/Akrobat/Akrobat.ttf",
 		"oF": 0
 		},
-	"/src/assets/img/.gitkeep": {
+	"/src/assets/fonts/Akrobat/Akrobat.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/build/assets/img/.gitkeep",
+		"oAP": "/build/assets/fonts/Akrobat/Akrobat.woff",
 		"oF": 0
+		},
+	"/src/assets/fonts/Akrobat/Akrobat.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Akrobat/Akrobat.woff2",
+		"oF": 0
+		},
+	"/src/assets/fonts/Akrobat/Akrobatblack.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Akrobat/Akrobatblack.ttf",
+		"oF": 0
+		},
+	"/src/assets/fonts/Akrobat/Akrobatblack.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Akrobat/Akrobatblack.woff",
+		"oF": 0
+		},
+	"/src/assets/fonts/Akrobat/Akrobatblack.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Akrobat/Akrobatblack.woff2",
+		"oF": 0
+		},
+	"/src/assets/fonts/Akrobat/Akrobatbold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Akrobat/Akrobatbold.ttf",
+		"oF": 0
+		},
+	"/src/assets/fonts/Akrobat/Akrobatbold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Akrobat/Akrobatbold.woff",
+		"oF": 0
+		},
+	"/src/assets/fonts/Akrobat/Akrobatbold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Akrobat/Akrobatbold.woff2",
+		"oF": 0
+		},
+	"/src/assets/fonts/Optima/AGOptimaCyrRoman.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Optima/AGOptimaCyrRoman.woff",
+		"oF": 0
+		},
+	"/src/assets/fonts/Optima/AGOptimaCyrRoman.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/assets/fonts/Optima/AGOptimaCyrRoman.woff2",
+		"oF": 0
+		},
+	"/src/assets/img/bg_faq.jpg": {
+		"ft": 16384,
+		"iS": 215160,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_faq.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_main.jpg": {
+		"ft": 16384,
+		"iS": 582324,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_main.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_prizes.jpg": {
+		"ft": 16384,
+		"iS": 224946,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_prizes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_video.jpg": {
+		"ft": 16384,
+		"iS": 341309,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_video.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/src/assets/img/icons.svg": {
 		"ft": 2097152,
@@ -165,6 +284,72 @@
 		"opt": 1,
 		"plM": 1107547906047,
 		"prP": 0
+		},
+	"/src/assets/img/logo.png": {
+		"ft": 32768,
+		"iS": 8924,
+		"oA": 0,
+		"oAP": "/build/assets/img/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/prizes/certificates.png": {
+		"ft": 32768,
+		"iS": 52489,
+		"oA": 0,
+		"oAP": "/build/assets/img/prizes/certificates.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/prizes/smartphones.png": {
+		"ft": 32768,
+		"iS": 77616,
+		"oA": 0,
+		"oAP": "/build/assets/img/prizes/smartphones.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/prizes/travel.png": {
+		"ft": 32768,
+		"iS": 126061,
+		"oA": 0,
+		"oAP": "/build/assets/img/prizes/travel.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/social/inst.png": {
+		"ft": 32768,
+		"iS": 1333,
+		"oA": 0,
+		"oAP": "/build/assets/img/social/inst.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/social/vk.png": {
+		"ft": 32768,
+		"iS": 1541,
+		"oA": 0,
+		"oAP": "/build/assets/img/social/vk.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/src/CNAME": {
 		"cB": 0,
@@ -188,7 +373,7 @@
 	"/src/js/lib/fastnav.js": {
 		"bF": 4,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/lib/fastnav.min.js",
@@ -201,7 +386,7 @@
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/build/js/lib/foundation-explicit-pieces.min.js",
 		"oF": 0,
 		"sC": 3,
@@ -277,6 +462,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/sections/_faq.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_faq.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/sections/_footer.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -294,6 +489,36 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_main.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_main.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_prizes.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_prizes.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_video.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_video.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -319,6 +544,19 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/build/css/app.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/components/_accordion.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_accordion.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -362,6 +600,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_menu.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_menu.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/components/_offcanvas.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -384,6 +635,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_popup.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_faq.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_faq.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -413,6 +677,66 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/src/scss/sections/_main.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_main.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_prizes.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_prizes.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_section.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_section.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_video.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_video.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/ziDs9kQ0": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/build/ziDs9kQ0",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -421,11 +745,11 @@
 	},
 "projectAttributes": {
 	"creationDate": 505831586,
-	"displayValue": "Wow project! Such boilerplate!",
+	"displayValue": "Curtis",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 548730532
+	"lastBuiltDate": 583539087.07171702
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

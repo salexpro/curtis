@@ -1,0 +1,67 @@
+-
+    const faq = [
+        {
+            question: 'Как принять участие в акции?',
+            answer: 'Ответ'
+        },
+        {
+            question: 'В каких городах и магазинах проводится акция?',
+            answer: 'Ответ'
+        },
+        {
+            question: 'Каковы сроки акции?',
+            answer: 'Ответ'
+        },
+        {
+            question: 'Как я могу получить гарантированный приз',
+            answer: 'Ответ'
+        },
+        {
+            question: 'Как принять участие в розыгрыше главного приза?',
+            answer: 'Ответ'
+        },
+        {
+            question: 'Сколько времени длится проверка загруженного чека?',
+            answer: 'Ответ'
+        },
+        {
+            question: 'Что делать, если не удается загрузить чек?',
+            answer: 'Ответ'
+        },
+        {
+            question: 'Когда будут опубликованы результаты розыгрыша главного приза?',
+            answer: 'Ответ'
+        },
+        {
+            question: 'Куда я могу обратиться с вопросами по конкурсу?',
+            answer: 'Ответ'
+        },
+    ]
+
+section.section.faq(data-anchor='faq')
+    .grid-container.faq_inner
+        h2.faq_header
+            | FAQ
+        .grid-x.grid-margin-x.faq_content
+            .cell.large-8.large-offset-2
+                ul.accordion(data-accordion data-allow-all-closed="true")
+                    each item in faq
+                        li.accordion-item(data-accordion-item)
+                            a.accordion-title(href='#')
+                                =item.question
+                            .accordion-content(data-tab-content)
+                                =item.answer
+
+                p.faq_rules
+                    | Общий срок проведения акции с 15 июля 2019 года по 30 сентября 2019 года, включая срок выдачи призов. Подробная информация об организаторе акции, о правилах ее проведения, количестве призов, сроках, месте и порядке их получения размещена на сайте promo.curtistea.com. Количество призов ограничено. Внешний вид призов может отличаться от их изображений, размещаемых в рекламных материалах акции.
+
+        .faq_left
+            ul.menu.simple.faq_social
+                li
+                    a(href="#")
+                        img(src="./assets/img/social/vk.png", alt="Вконтакте")
+                li
+                    a(href="#")
+                        img(src="./assets/img/social/inst.png", alt="Инстаграм")
+            a.faq_left_policy(href="#")
+                | Политика конфиденциальности

@@ -1,0 +1,22 @@
+.menu{
+    &--header{
+        align-items: center;
+        justify-content: center;
+        font-family: 'Optima', sans-serif;
+        margin: auto;
+        li + li{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: calc(50% - 22px);
+                height: 44px;
+                border-left: 1px solid $white;
+            }
+        }
+        a{
+            margin: 0 30px;
+        }
+    }
+}

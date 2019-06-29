@@ -1,8 +1,8 @@
 block const
 -
-    const title  = `${name ?  `${name} - ` : ''}Project`;
+    const title  = `${name ?  `${name} - ` : ''}Curtis`;
     const descr  = 'Description';
-    const domain = 'subdomain.salex.pro'
+    const domain = 'curtis.salex.pro'
 
 mixin icon(name, size, color, viewbox)
     - viewbox = viewbox || size
@@ -11,8 +11,8 @@ mixin icon(name, size, color, viewbox)
 
 //- Components
 include components/_icons
-//- include components/_menu
-
+include components/_menu
+    
 doctype html
 html(lang="ru")
     include components/_head
@@ -24,4 +24,5 @@ html(lang="ru")
             //- include components/_popup
         //- include components/_offcanvas
         block js
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.js")
             script(src="./js/app.min.js")

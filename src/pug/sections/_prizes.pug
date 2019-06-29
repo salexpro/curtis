@@ -1,0 +1,37 @@
+-
+    const prizes = [
+        {
+            header: 'Каждый день',
+            img: 'certificates',
+            title: '30 сертификатов<br>«Магнит Косметик»'
+        },
+        {
+            header: 'Каждую неделю',
+            img: 'smartphones',
+            title: '3 смартфона'
+        },
+        {
+            header: 'Главный приз',
+            img: 'travel',
+            title: 'Путешествие<br>в страну мечты!'
+        }
+    ]
+
+mixin prize(data)
+    .cell.prizes_item
+        h3.prizes_item_header
+            =data.header
+        .prizes_item_img
+            img(src=`./assets/img/prizes/${data.img}.png`, alt=label)
+        p.prizes_item_title
+            !=data.title
+
+section.section.prizes(data-anchor='prizes')
+    .grid-container.prizes_inner
+        h2 Призы
+        .grid-x.grid-margin-x.large-up-3.prizes_items
+            each prize in prizes
+                +prize(prize)
+        .prizes_bottom
+            button.button
+                | Зарегистрировать чек

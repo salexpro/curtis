@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat'), local('Akrobat-Regular'), url('../assets/fonts/Akrobat/Akrobat.woff2') format('woff2'), url('../assets/fonts/Akrobat/Akrobat.woff') format('woff');
+    //  url('../assets/fonts/Akrobat/Akrobat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Bold'), local('Akrobat-Bold'), url('../assets/fonts/Akrobat/Akrobatbold.woff2') format('woff2'), url('../assets/fonts/Akrobat/Akrobatbold.woff') format('woff');
+    //  url('../assets/fonts/Akrobat/Akrobatbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Black'), local('Akrobat-Black'), url('../assets/fonts/Akrobat/Akrobatblack.woff2') format('woff2'), url('../assets/fonts/Akrobat/Akrobatblack.woff') format('woff');
+    //  url('../assets/fonts/Akrobat/Akrobatblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url('../assets/fonts/Optima/AGOptimaCyrRoman.woff2') format('woff2'), url('../assets/fonts/Optima/AGOptimaCyrRoman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

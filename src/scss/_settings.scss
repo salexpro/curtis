@@ -65,11 +65,11 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-font-size: 22px;
+$global-width: rem-calc(1015);
 $global-lineheight: 1.3;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #ffc600,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -80,17 +80,17 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #000;
 $white: #fff;
-$body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-background: #0b020a;
+$body-font-color: $white;
+$body-font-family: 'Akrobat', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
-$global-weight-normal: normal;
+$global-weight-normal: 700;
 $global-weight-bold: bold;
 $global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
+$global-menu-padding: 0.5em 30px;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -130,12 +130,12 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: 900;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
-$header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-color: $primary-color;
+$header-lineheight: 1;
+$header-margin-bottom: 0;
 $header-styles: (
   small: (
     'h1': ('fs': 24),
@@ -147,8 +147,8 @@ $header-styles: (
   ),
   medium: (
     'h1': ('fs': 48),
-    'h2': ('fs': 40),
-    'h3': ('fs': 31),
+    'h2': ('fs': 58),
+    'h3': ('fs': 34),
     'h4': ('fs': 25),
     'h5': ('fs': 20),
     'h6': ('fs': 16),
@@ -157,8 +157,8 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
-$paragraph-margin-bottom: 1rem;
+$paragraph-lineheight: 0.93;
+$paragraph-margin-bottom: 0;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
@@ -166,8 +166,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $white;
+$anchor-color-hover: $primary-color;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -221,16 +221,16 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
+$accordion-background: none;
 $accordion-plusminus: true;
-$accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: 1.25rem 1rem;
-$accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
+$accordion-title-font-size: rem-calc(22);
+$accordion-item-color: $white;
+$accordion-item-background-hover: none;
+$accordion-item-padding: 18px 0;
+$accordion-content-background: none;
+$accordion-content-border: none;
 $accordion-content-color: $body-font-color;
-$accordion-content-padding: 1rem;
+$accordion-content-padding: 0.5rem 1rem 1rem;
 
 // 8. Accordion Menu
 // -----------------
@@ -278,19 +278,19 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
+$button-padding: 36px 70px 30px;
+$button-margin: 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
+$button-color: #0b020a;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: 45px;
 $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: 25px,
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
@@ -470,7 +470,7 @@ $mediaobject-image-width-stacked: 100%;
 $menu-margin: 0;
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
-$menu-simple-margin: 1rem;
+$menu-simple-margin: 11px;
 $menu-item-color-active: $white;
 $menu-item-background-active: get-color(primary);
 $menu-icon-spacing: 0.25rem;
@@ -715,7 +715,7 @@ $prototype-text-overflow: ellipsis;
 
 $responsive-embed-margin-bottom: rem-calc(16);
 $responsive-embed-ratios: (
-  default: 4 by 3,
+  default: 16 by 9,
   widescreen: 16 by 9,
 );
 
@@ -854,7 +854,7 @@ $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
   small: 20px,
-  medium: 30px
+  medium: 15px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $block-grid-max: 8;

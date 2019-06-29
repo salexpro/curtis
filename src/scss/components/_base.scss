@@ -26,12 +26,12 @@ html, body{
 }
 
 .wrap {
-    overflow: hidden;
+    // overflow: hidden;
     min-width: 320px;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    min-height: 100vh;
+    // flex-direction: column;
+    // align-items: stretch;
+    // justify-content: flex-start;
+    // min-height: 100vh;
 }
 
 a{
@@ -40,4 +40,8 @@ a{
 
 .js-off-canvas-overlay{
     -webkit-tap-highlight-color: transparent;
+}
+
+h2, .h2, h3, .h3{
+    text-transform: uppercase;
 }

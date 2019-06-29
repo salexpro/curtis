@@ -5,9 +5,10 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        margin-top: 68px;
-        margin-bottom: 78px;
+        justify-content: space-around;
+        justify-content: center;
+        padding-top: 68px;
+        padding-bottom: 78px;
     }
     &_items{
         margin-top: 99px;

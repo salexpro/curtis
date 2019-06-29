@@ -3,6 +3,14 @@
     padding-top: 0;
     display: flex;
     align-items: center;
+    > .fp-scrollable{
+        width: 100%;
+    }
+    img{
+        display: block;
+        width: 100%;
+        max-width: none;
+    }
     &_inner{
         display: flex;
         flex-direction: column;

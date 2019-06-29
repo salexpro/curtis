@@ -5,6 +5,9 @@
     &_inner{
         height: 100%;
         padding: 68px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &_container{
         margin-top: 95px;

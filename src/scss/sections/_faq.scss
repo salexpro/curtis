@@ -2,12 +2,16 @@
     background-image: url(../assets/img/bg_faq.jpg);
     &_inner{
         padding-top: 70px;
+        padding-bottom: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &_header{
         text-align: center;
     }
     &_content{
-        padding-bottom: 30px;
     }
     &_rules{
         font-size: 15px;

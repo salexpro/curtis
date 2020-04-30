@@ -19,7 +19,7 @@
   "dependencies": {
     "foundation-sites": "^6.5.3",
     "fullpage.js": "^3.0.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "svg4everybody": "^2.1.9"
   },
   "devDependencies": {
